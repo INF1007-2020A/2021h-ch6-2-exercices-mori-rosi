@@ -1,0 +1,35 @@
+test_color_name_to_hex (__main__.TestExercice) ... ok
+test_compute_mse (__main__.TestExercice) ... ERROR
+test_create_list (__main__.TestExercice) ... ERROR
+test_list_to_dict (__main__.TestExercice) ... ERROR
+
+======================================================================
+ERROR: test_compute_mse (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 59, in test_compute_mse
+    output = exercice.compute_mse(value)
+AttributeError: module 'exercice' has no attribute 'compute_mse'
+
+======================================================================
+ERROR: test_create_list (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 44, in test_create_list
+    output = exercice.create_list()
+AttributeError: module 'exercice' has no attribute 'create_list'
+
+======================================================================
+ERROR: test_list_to_dict (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 19, in test_list_to_dict
+    output = [exercice.list_to_dict(v) for v in values]
+  File "test_exercice.py", line 19, in <listcomp>
+    output = [exercice.list_to_dict(v) for v in values]
+AttributeError: module 'exercice' has no attribute 'list_to_dict'
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+FAILED (errors=3)
